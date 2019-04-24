@@ -22,8 +22,8 @@ void createList(List& First){
 }
 void createElement(pointer& pBaru){
 	pBaru=new ElemtList;
-	cout << "No.Makanan	: "; cin >> pBaru->no;
-	cout << "Nama Makanan	: "; cin>>pBaru->nama_makanan; cin.ignore(255,'\n');
+	cout << "No.Makanan	: "; cin >> pBaru->no;cin.ignore(255,'\n');
+	cout << "Nama Makanan	: "; getline(cin,pBaru->nama_makanan); 
 	cout << "Harga	: "; cin >> pBaru->harga;
 	pBaru->next=NULL;
 }
@@ -116,6 +116,3 @@ int main (){
 	sorting(Makanan);
 	traversal(Makanan);
 }
-
-
-
