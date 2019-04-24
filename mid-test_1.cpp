@@ -95,12 +95,12 @@ void sorting(List& First){
 void traversal(List &First){
 	pointer pBantu;
 	pBantu=First;
+	cout<<"No\tNama Makanan\t\tHarga\t\tJumlah\n";
 	while(pBantu != NULL){
-        	cout <<pBantu->no<<"\t"<<pBantu->nama_makanan<<"\t"<<pBantu->harga<<"\t"<<pBantu->jumlah<<endl;
+        	cout <<pBantu->no<<"\t"<<pBantu->nama_makanan<<"\t\t\t"<<pBantu->harga<<"\t\t"<<pBantu->jumlah<<endl;
 			pBantu=pBantu->next;
 	}
 }
-
 
 int main (){
 	List Makanan;
